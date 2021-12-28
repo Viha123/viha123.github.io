@@ -1,31 +1,111 @@
-/* * {
+/* import some good google font */
+:root {
+  --background: rgba(186, 173, 248, 1.0)
+}
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+body {
   margin: 0px;
-  padding: 0px;
-  /* background: black; 
-
-
-#title:hover {
-  color: white;
+  background: #222;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
 }
-.letter:hover {
-  color: white;
-}
-
-.topbar {
-  background: #29292d;
-  display: inline-block;
-  color: #a0a0a0;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  text-align: center;
-  vertical-align: middle;
-  box-shadow: 0px 5px rgba(186, 173, 248, 0.6);
-  border-bottom-left-radius: 2%;
-  border-bottom-right-radius: 2%;
-  
-}
-.nav {
-  display: inline-block;
-  text-align: center;
+/* .content{
+  height: 200vh;
+  background-image: url(https://cdn.wallpapersafari.com/32/3/S1jatp.jpg);
+  background-color: #333;
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
 } */
+
+/* actual nav bar code starts here */
+header{
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index:  999;
+
+}
+
+nav{
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1,0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+nav a:hover{
+  color: #000;
+} 
+
+.nav-toggle:checked ~ nav{ /*looks for any preceeding sibling, it doesn't have to be right after, so any css item that has nav would work. */
+  transform: scale(1,1);
+}
+.nav-toggle { 
+  display: none;
+  /* don't let the check mark show */
+}
+.nav-toggle-label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  border: 1px solid red;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+  content: '';
+  position: absolute;
+}
+.nav-toggle-label span::before{
+  bottom: 7px;
+}
+.nav-toggle-label span::after{
+  top: 7px;
+}
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
 
