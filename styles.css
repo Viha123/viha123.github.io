@@ -159,3 +159,20 @@ nav a:hover{
   }
   
 }
+a {
+  color: #000;
+  text-decoration: none;
+}
+.intro{
+  margin-top: 0px;
+  position: relative;
+  color: white;
+  padding-top: 3em;
+  padding-left: 2em;
+}
+.list{
+  color: white;
+}
+.impImg{
+  padding-left: 5em;
+}
