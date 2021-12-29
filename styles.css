@@ -120,6 +120,7 @@ nav a:hover{
   }
   .logo{
     grid-column: 2/3;
+    
   }
   nav{
     all: unset;
