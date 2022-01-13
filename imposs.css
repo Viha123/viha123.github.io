@@ -1,0 +1,59 @@
+.intro{
+  margin-top: 20px;
+  position: relative;
+  color: rgb(241, 238, 238);
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  width: 80%;   
+  font-size: 1.3em;
+  
+}
+.list{
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.impImg{
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  width: 80%;   
+  
+}
+.titleImp{
+  padding-top: 100px;
+  margin-top: 0px;
+  color: white;
+  float: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 900px){
+  .impImg{
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  width: 60%;   
+  }
+  .intro{
+  margin-top: 20px;
+  position: relative;
+  color: rgb(241, 238, 238);
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  width: 60%;   
+  font-size: 1.3em;
+  }
+  .list{
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  
+    }
+}
