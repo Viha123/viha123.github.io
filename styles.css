@@ -166,13 +166,25 @@ a {
 .intro{
   margin-top: 0px;
   position: relative;
-  color: white;
+  color: rgb(241, 238, 238);
   padding-top: 3em;
   padding-left: 2em;
+  font-size: 1.3em;
 }
 .list{
   color: white;
+  padding-left: 2em;
 }
 .impImg{
-  padding-left: 5em;
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  width: 50%;   
+}
+.titleImp{
+  padding-top: 100px;
+  margin-top: 0px;
+  color: white;
+  float: center;
+  text-align: center;
 }
