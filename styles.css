@@ -1,6 +1,7 @@
 /* import some good google font */
 :root {
-  --background: rgba(186, 173, 248, 1.0)
+  --background: rgba(186, 173, 248, 1.0);
+  --quoteground: rgba(186, 173, 248, 0.80);
 }
 *, *::before, *::after{
   box-sizing: border-box;
@@ -166,4 +167,13 @@ nav a:hover{
 a {
   color: #000;
   text-decoration: none;
+}
+.quoteDisplay{
+  color: black;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  text-align: center;
+  background: var(--quoteground);
+
+
 }
