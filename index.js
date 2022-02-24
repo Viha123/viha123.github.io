@@ -6,24 +6,26 @@ function randGen(max){
 }
 
 function fetchingQuote(rand){
+    var quote;
     fetch("./book-quotes.json")
-      .then((response) => {
+    .then((response) => {
         return response.json();
-      })
-      .then((data) => console.log(data[rand].Quote)); //YESSS IT WORKS
-
+    })
+    .then((data) => quote = data[0].Quote); //YESSS IT WORKS
+    console.log(quote);
 }
 function fetchingAuthor(rand){
     fetch("./book-quotes.json")
-      .then((response) => {
+    .then((response) => {
         return response.json();
-      })
-      .then((data) => console.log(data[rand].Author));
+    })
+    .then((data) => console.log(data[rand].Author));
 }
 const sectionRef = document.querySelector('section');
 const newText = document.createElement('h2');
 sectionRef.appendChild(newText);
-newText.textContent = "Amazing quote";
+newText.textContent = 'Amazing Quote: IDK how to continue yet, will come back to it later D:';
+
 
 
 
