@@ -1,0 +1,30 @@
+:root {
+    --background: rgba(186, 173, 248, 1.0);
+    --quoteground: rgba(186, 173, 248, 0.80);
+    --cardcolor: #A5FFD6;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr;
+    grid-row: 3;
+    gap: 10px;
+}
+.img{
+    margin-left: 100px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.title{
+    grid-column: 2;
+    margin-top: 100px;
+    color: var(--background);
+}
+.para{
+    grid-column: 2;
+    color: white;
+    font-size: 1.5rem;
+}
+.question{
+    color: var(--background);
+    grid-column: 2;
+}
