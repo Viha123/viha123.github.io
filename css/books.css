@@ -68,3 +68,11 @@ body {
     place-items: center;
     color: black;
 }
+/* NON FICTION MAIN PAGE STYLES */
+/* Plan to make these into cards later */
+/* .blog-list{
+    margin-top: 100px;
+} */
+.book{
+    color: white;
+}
