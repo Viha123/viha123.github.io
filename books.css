@@ -81,5 +81,24 @@ body {
 
 .blog1{
     color: white;
-    padding-top: 200px; 
+    text-decoration: underline;
+    text-decoration-color: var(--background);
+}
+.blog1:hover{
+    font-size: 1.5em;
+}
+.bullet{
+    color: var(--background);
+    padding-left: 15%;
+}
+.announcements{
+    color: white;
+    padding-left: 10%;
+
+}
+.heading{
+    color: white;
+    padding-left: 45%;
+    text-decoration: underline;
+    text-decoration-color: var(--background);
 }

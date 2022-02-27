@@ -18,3 +18,8 @@
     grid-column: 2/5;
     font-size: 1.5em;
 }
+blockquote{
+    color: var(--background);
+    grid-column: 2/5;
+    font-size: 2em;
+}
