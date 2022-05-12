@@ -2,6 +2,9 @@
     --background: rgba(186, 173, 248, 1.0);
     --quoteground: rgba(186, 173, 248, 0.80);
     --cardcolor: #A5FFD6;
+    --back: #222;
+    --typeSpeed : 6s;
+    --typeChar : 23;
 }
 .container{
     display: grid;
@@ -12,19 +15,51 @@
 .img{
     margin-left: 10px;
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 2;
 }
-.title{
-    grid-column: 2;
+h2{
+    grid-column: 2/3;
     margin-top: 100px;
     color: var(--background);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    width: max-content;
+    
 }
+h2::before,
+h2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+h2::before{
+    background: var(--back);
+    animation: typewriter var(--typeSpeed) steps(var(--typeChar)) 1s forwards;
+
+}
+h2::after{
+    width: 0.125em;
+    background: var(--background); 
+    animation: typewriter var(--typeSpeed) steps(var(--typeChar)) 1s forwards, blink 750ms steps(23) infinite;
+}
+
 .para{
     grid-column: 2;
     color: white;
     font-size: 1.2rem;
 }
-.question{
-    color: var(--background);
-    grid-column: 2;
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+
+    }
 }
