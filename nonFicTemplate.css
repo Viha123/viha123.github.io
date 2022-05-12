@@ -28,12 +28,13 @@ body {
 }
 .heading{
     color: var(--background);
-    grid-column: 2/3;
+    grid-column: 1/3;
+    text-decoration: none;
 }
 .para{
     color: white;
-    grid-column: 2/3;
-    font-size: 1.3rem;
+    grid-column: 2;
+    font-size: 1rem;
 }
 img{
     padding-top: 130px;
