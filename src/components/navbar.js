@@ -17,9 +17,9 @@ export default function Navbar () {
             </ul>
 
         </nav>
-        <label for="nav-toggle" class ="nav-toggle-label">
+        {/* <label for="nav-toggle" class ="nav-toggle-label">
             <span></span>
-        </label> 
+        </label>  */}
     </header>
     )
 }
