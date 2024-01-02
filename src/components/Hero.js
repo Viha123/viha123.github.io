@@ -20,7 +20,7 @@ export default function Hero() {
         className="w-[50%] flex flex-row place-content-center items-center"
       >
         <div className="w-[75%] h-[75%] border-zinc-900 rounded-full border-2 bg-red-600">
-        <img className="w-full h-full object-cover rounded-full overflow-hidden" src={require('./profile.jpg')} />        </div>
+        <img className="w-full h-full object-cover rounded-full overflow-hidden" src={require('../images/profile.jpg')} />        </div>
 
       </div>
 

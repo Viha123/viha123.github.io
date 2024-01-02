@@ -5,11 +5,10 @@ export default function Navbar () {
     return (
         <header>
         {/* <input type="checkbox" id = "nav-toggle" class = "nav-toggle"></input> */}
-        <nav className='pt-10 pb-10'>
+        <nav className='fixed top-0 w-full z-50 pt-10 pb-10 bg-zinc-900'>
             <ul className = "flex flex-row place-content-center">
-                {/* <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li> */}
+
+                <NavbarElement name = "Home" />
                 <NavbarElement name = "About" />
                 <NavbarElement name = "Projects" />
                 <NavbarElement name = "Contact" />
