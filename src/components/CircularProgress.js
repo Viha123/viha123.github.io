@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-function CircularProgress({ value }) { //VERY MUCH COPILOT POWERED
+function CircularProgress({ value, category }) { //VERY MUCH COPILOT POWERED
   
   const radius = 50;
   const circumference = 2 * Math.PI * radius;
@@ -15,7 +15,7 @@ function CircularProgress({ value }) { //VERY MUCH COPILOT POWERED
   return (
     <svg height="120" width="120" style={{ transform: 'rotate(-90deg)' }}>
       <circle
-        stroke="#EAE3CC"
+        stroke="green"
         fill="transparent"
         strokeWidth="10"
         r={radius}
@@ -32,6 +32,8 @@ function CircularProgress({ value }) { //VERY MUCH COPILOT POWERED
         cx="60"
         cy="60"
       />
+      <text x="50%" y="50%" textAnchor="middle" stroke="black" strokeWidth="1px" dy=".3em">{category}</text>
+
     </svg>
   );
 }

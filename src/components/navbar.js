@@ -11,6 +11,7 @@ export default function Navbar () {
                 <NavbarElement name = "Home" />
                 <NavbarElement name = "About" />
                 <NavbarElement name = "Projects" />
+                <NavbarElement name = "Skills" />
                 <NavbarElement name = "Contact" />
 
             </ul>

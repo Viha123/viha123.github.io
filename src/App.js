@@ -11,6 +11,7 @@ import aoc from "./images/aocprogress.png";
 import "./App.css";
 import About from "./components/About"; // Import the About component
 import Contact from "./components/Contact";
+import Skills from "./components/Skills";
 function App() {
   return (
     <div className="bg-zinc-900 text-white font-mono scroll-smooth">
@@ -30,7 +31,7 @@ function App() {
             id="projects"
             className=" pt-20 flex flex-col justify-center items-center"
           >
-            <h1 className="mt-[5vh] text-4xl">My Work</h1>
+            <h1 className="mt-[5vh] text-4xl ">My Work</h1>
             <div className="grid grid-cols-3 gap-4">
               <ProjectCard
                 image={ladybug}
@@ -77,7 +78,9 @@ function App() {
             </div>
           </div>
         </div>
-
+        <div className="min-h-screen bg-zinc-900">
+          <Skills /> {/* Include the Skills component */}
+        </div>
         <div className="min-h-screen bg-zinc-900">
           <Contact /> {/* Include the Contact component */}
         </div>

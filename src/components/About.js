@@ -3,7 +3,7 @@ import CircularProgress from './CircularProgress';
 const About = () => {
     return (
         <div id="about" className="flex flex-col justify-center items-center pt-24">
-            <h1 className="mt-[5vh] text-4xl">About Me!</h1>
+            <h1 className="mt-[5vh] text-4xl text-peach-150">About Me!</h1>
             {/* <CircularProgress value={60}/> */}
             <p className='w-[60vw] mt-[2%]'>
                 Hello, I'm Viha, a sophomore at San Jose State University studying Computer Science! 
