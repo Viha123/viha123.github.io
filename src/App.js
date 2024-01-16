@@ -8,6 +8,7 @@ import blackjack from "./images/blackjack.png";
 import minesweeper from "./images/minesweeper.png";
 import calhacks from "./images/calhacks.png";
 import aoc from "./images/aocprogress.png";
+import sportgame from "./images/sportgame.png"
 import "./App.css";
 import About from "./components/About"; // Import the About component
 import Contact from "./components/Contact";
@@ -33,6 +34,13 @@ function App() {
           >
             <h1 className="mt-[5vh] text-4xl ">My Work</h1>
             <div className="grid grid-cols-3 gap-4">
+              <ProjectCard 
+                image = {sportgame}
+                link = {"https://github.com/Viha123/gamepredictor-"}
+                title = "Sport Game Predictions"
+                technologies={"React.js, Express.js, Puppeteer.js, MongoDB"}
+                description={"A full stack MERN app to predict results of sport tournaments, and compete with each other"}
+              />
               <ProjectCard
                 image={ladybug}
                 link = {"https://github.com/emurun/csc151-03-01/tree/nashitasFinalBranch"}
