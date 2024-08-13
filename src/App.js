@@ -9,6 +9,8 @@ import minesweeper from "./images/minesweeper.png";
 import calhacks from "./images/calhacks.png";
 import aoc from "./images/aocprogress.png";
 import sportgame from "./images/sportgame.png"
+import chessengine from "./images/chessengine.png"
+import ecomm from "./images/ecomm.png"
 import "./App.css";
 import About from "./components/About"; // Import the About component
 import Contact from "./components/Contact";
@@ -24,9 +26,7 @@ function App() {
         >
           <Hero />
         </div>
-        <div className=" bg-zinc-900">
-          <About /> {/* Include the About component */}
-        </div>
+        
         <div className="min-h-screen bg-zinc-900">
           <div
             id="projects"
@@ -34,6 +34,13 @@ function App() {
           >
             <h1 className="mt-[5vh] text-4xl ">My Work</h1>
             <div className="grid grid-cols-3 gap-4">
+            <ProjectCard 
+                image = {chessengine}
+                link = {"https://github.com/Viha123/quakece"}
+                title = "A Chess Engine In C++"
+                technologies={"C++, SFML (for the Graphics), gprof, valgrind for profiling"}
+                description={"A AI made with multiple algorithms to play the game of chess. Includes a Player vs Player and Player vs AI mode. I learned a lot about performance and testing with this project"}
+              />
               <ProjectCard 
                 image = {sportgame}
                 link = {"https://github.com/Viha123/gamepredictor-"}
@@ -41,12 +48,19 @@ function App() {
                 technologies={"React.js, Express.js, Puppeteer.js, MongoDB"}
                 description={"A full stack MERN app to predict results of sport tournaments, and compete with each other"}
               />
+               <ProjectCard 
+                image = {ecomm}
+                link = {"https://github.com/ninaw04/web-store"}
+                title = "E-Commerce Website"
+                technologies={"React.js, Express.js, MySQL, Digital Ocean"}
+                description={"A simple E-commerce website to buy and sell items."}
+              />
               <ProjectCard
                 image={ladybug}
                 link = {"https://github.com/emurun/csc151-03-01/tree/nashitasFinalBranch"}
                 title="LadyBug: A bug tracking system"
                 technologies="Java, JavaFX, SQLite, FXML"
-                description="This is a simple CRUD app to manage and track bugs in projects created in a team of 3 people."
+                description="This is a simple CRUD app to manage and track bugs in projects created in a team of 3 people. Uses the MVC architecture to architect this app"
               />
               <ProjectCard
                 image={astar}
@@ -88,6 +102,9 @@ function App() {
         </div>
         <div className="min-h-screen bg-zinc-900">
           <Skills /> {/* Include the Skills component */}
+        </div>
+        <div className=" bg-zinc-900">
+          <About /> {/* Include the About component */}
         </div>
         <div className="min-h-screen bg-zinc-900">
           <Contact /> {/* Include the Contact component */}

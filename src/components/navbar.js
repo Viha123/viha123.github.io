@@ -9,9 +9,9 @@ export default function Navbar () {
             <ul className = "flex flex-row place-content-center">
 
                 <NavbarElement name = "Home" />
-                <NavbarElement name = "About" />
                 <NavbarElement name = "Projects" />
                 <NavbarElement name = "Skills" />
+                <NavbarElement name = "About" />
                 <NavbarElement name = "Contact" />
 
             </ul>
