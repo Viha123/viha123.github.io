@@ -6,9 +6,9 @@ const About = () => {
             <h1 className="mt-[5vh] text-4xl text-peach-150">About Me!</h1>
             {/* <CircularProgress value={60}/> */}
             <p className='w-[60vw] mt-[2%]'>
-                Hello, I'm Viha, a rising junior at San Jose State University studying Computer Science! 
+                Hello, I'm Viha, a junior at San Jose State University studying Computer Science! 
                 I'm interested in <strong className = "text-peach-150"> embedded systems, full-stack development, and computer science </strong>. 
-                I'm looking for internships for Summer 2025.
+                I'm looking for internships for Fall 2025, and job opportunities starting 2026. I will be internshing at Shield AI in the summer as a C++ Sofware Engineering Intern.
                 <br/>
                 <br/>
                 At school, I'm involved in the <strong className='text-peach-150'>SJSU Robotics Club</strong>, where I'm the Controls Lead. 

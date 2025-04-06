@@ -10,7 +10,7 @@ const Contact = () => {
       {/* <CircularProgress value={60}/> */}
       <p className="w-[60vw] mt-[2%]">
         I would love to collaborate on exciting projects and learn new things.
-        I'm also looking for internships for Summer 2024. Please reach out to
+        I'm also looking for internships for Fall 2025. Please reach out to
         me!
         <br />
         <br />

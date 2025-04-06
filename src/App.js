@@ -11,6 +11,11 @@ import aoc from "./images/aocprogress.png";
 import sportgame from "./images/sportgame.png"
 import chessengine from "./images/chessengine.png"
 import ecomm from "./images/ecomm.png"
+import raymarch from "./images/raymarch.png"
+import raycast from "./images/raytraceMultipleTextures.png"
+import ik from "./images/ik.png"
+import flocking from "./images/flocking.png"
+import bouncingBall from "./images/bouncingBall.png"
 import "./App.css";
 import About from "./components/About"; // Import the About component
 import Contact from "./components/Contact";
@@ -40,6 +45,41 @@ function App() {
                 title = "A Chess Engine In C++"
                 technologies={"C++, SFML (for the Graphics), gprof, valgrind for profiling"}
                 description={"A AI made with multiple algorithms to play the game of chess. Includes a Player vs Player and Player vs AI mode. I learned a lot about performance and testing with this project"}
+              />
+              <ProjectCard 
+                image = {raycast}
+                link = {"https://github.com/Viha123"}
+                title = "A Raycaster"
+                technologies={"C++, OpenFrameworks, OpenGL"}
+                description={"A CPU based Raycaster that supports textures, spotlights, and meshes."}
+              />
+              <ProjectCard 
+                image = {raymarch}
+                link = {"https://github.com/Viha123"}
+                title = "RayMarch"
+                technologies={"C++, OpenFrameworks, OpenGL"}
+                description={"A CPU based addition to the raycaster, exploring the concepts of RayMarching and smoothing functions."}
+              />
+              <ProjectCard 
+                image = {ik}
+                link = {"https://github.com/Viha123"}
+                title = "Inverse Kinematics"
+                technologies={"C++, OpenFrameworks, OpenGL"}
+                description={"A 2 arm solver for Inverse Kinematics in a robotics application."}
+              />
+              <ProjectCard 
+                image = {flocking}
+                link = {"https://github.com/Viha123"}
+                title = "Flocking Stimulation"
+                technologies={"C++, OpenFrameworks, OpenGL"}
+                description={"A CPU based flocking stimulation, implementing Reynold's rules of flocks to stimular bird flight."}
+              />
+              <ProjectCard 
+                image = {bouncingBall}
+                link = {"https://github.com/Viha123"}
+                title = "Bouncing ball Physics"
+                technologies={"C++, OpenFrameworks, OpenGL"}
+                description={"A GPU based bouncing ball raytracer. Explore particle systems, and shaders with this project"}
               />
               <ProjectCard 
                 image = {sportgame}
