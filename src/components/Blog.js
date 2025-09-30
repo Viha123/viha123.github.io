@@ -63,7 +63,7 @@ const Blog = () => {
     <div className="min-h-screen bg-zinc-900 pt-20">
       <div className="max-w-6xl mx-auto px-6 py-8">
         <h1 className="text-4xl font-bold text-center mb-12 text-peach-150">
-          My Blog
+          The Generalist Blog
         </h1>
         
         <Tags 
