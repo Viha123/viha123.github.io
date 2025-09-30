@@ -9,6 +9,13 @@ module.exports = {
         peach: {
           50: "#EAE3CC",
           150: "#F1EDD5"
+        },
+        highlight: {
+          pink: "#F472B6",     // Pink-400
+          blue: "#60A5FA",     // Blue-400  
+          purple: "#A78BFA",   // Purple-400
+          cyan: "#22D3EE",     // Cyan-400
+          green: "#86EFAC"     // Pastel green (Green-300)
         }
       },
       screens: {
