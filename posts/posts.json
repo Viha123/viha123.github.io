@@ -1,2 +1,10 @@
 [
+  {
+    "id": 1,
+    "title": "A reflection on a year of dedicated running",
+    "date": "2025-10-2",
+    "excerpt": "My running journey, progress and a look back.",
+    "filename": "a-year-running.md",
+    "tags": ["running"]
+  }  
 ]
